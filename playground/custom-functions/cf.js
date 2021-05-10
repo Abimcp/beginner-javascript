@@ -1,14 +1,23 @@
 // Function Definition
-function calculateBill() {
+function calculateBill(billAmount, taxRate = 0.13, tipRate = 0.15) {
   // this is the function body
   console.log('Running Calculate Bill!!');
-  const total = 100 * 1.13;
-  console.log(total);
+  const total = billAmount + billAmount * taxRate + billAmount * tipRate;
   return total;
 }
 
 // Function Call. Or *Run* of the function
-const myTotal = calculateBill();
-// console.log(`Your Total is $${myTotal}`)
+// const myTotal = calculateBill(100, 0.13);
 
-console.log(`your total is $${calculateBill()}`);
+function sayHiTo(firstName) {
+  return `Hello ${firstName}`;
+}
+// const greeting = sayHiTo('Abi');
+// console.log(greeting);
+
+function doctorise(name) {
+  return `Dr. ${name}`;
+}
+function yell(name = '') {
+  return `HEY ${name.toUpperCase()}`;
+}
