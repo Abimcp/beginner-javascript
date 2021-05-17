@@ -5,12 +5,12 @@ const people = [
 ];
 
 people.forEach((person, index) => {
-  console.log(person.name);
+  console.info(person.name);
 });
 
 // Console Methods
-
-// Callstack
+ 
+// Callstack, Stack Trace    
 
 // Grabbing Elements
 
